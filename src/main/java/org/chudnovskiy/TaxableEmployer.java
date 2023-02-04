@@ -5,7 +5,7 @@ import org.chudnovskiy.util.PaymentType;
 import java.math.BigDecimal;
 
 public class TaxableEmployer extends Employer {
-    private BigDecimal toPay;
+    private final BigDecimal toPay;
 
     public TaxableEmployer(String name, PaymentType paymentType, BigDecimal sum) {
         super(name, paymentType, sum);
@@ -13,6 +13,10 @@ public class TaxableEmployer extends Employer {
     }
 
     private BigDecimal getToPay(PaymentType paymentType, BigDecimal sum) {
-        return new BigDecimal(sum.doubleValue() * (100.d - (double)(paymentType.percent)) / 100.d);
+        return BigDecimal.valueOf(sum.doubleValue() * (100.d - (double) (paymentType.percent)) / 100.d);
+    }
+
+    public BigDecimal getToPay() {
+        return toPay;
     }
 }
