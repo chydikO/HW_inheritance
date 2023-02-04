@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 public class EmployerHelper {
-    static private BigDecimal getSum(List<Employer> employers) {
+    static public BigDecimal getSum(List<Employer> employers) {
         BigDecimal sum = new BigDecimal(0);
         for(Employer employer : employers) {
             sum = sum.add(employer.getSum());

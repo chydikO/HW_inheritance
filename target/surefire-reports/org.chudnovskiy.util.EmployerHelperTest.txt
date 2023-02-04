@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.chudnovskiy.util.EmployerHelperTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.08 s <<< FAILURE! - in org.chudnovskiy.util.EmployerHelperTest
+whenSumIs9300  Time elapsed: 0.061 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <9300> but was: <0>
+	at org.chudnovskiy.util.EmployerHelperTest.whenSumIs9300(EmployerHelperTest.java:25)
+
