@@ -15,6 +15,4 @@ public class Employer {
     private String name;
     private PaymentType paymentType;
     private BigDecimal sum;
-
-
 }

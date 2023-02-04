@@ -1,14 +1,13 @@
 package org.chudnovskiy.util;
 
 import org.chudnovskiy.Employer;
-import org.junit.Before;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class EmployerHelperTest {
     private static final List<Employer> employers = new ArrayList<>(10);

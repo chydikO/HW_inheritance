@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class App {
-    private static List<Employer> employers = new ArrayList<>(10);
+    private static final List<Employer> employers = new ArrayList<>(10);
 
     public static void main(String[] args) {
         loadDataToEmployers();

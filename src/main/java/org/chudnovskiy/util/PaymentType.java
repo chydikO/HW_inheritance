@@ -7,7 +7,7 @@ public enum PaymentType {
 
     public final String label;
 
-    private PaymentType(String label) {
+    PaymentType(String label) {
         this.label = label;
     }
 
