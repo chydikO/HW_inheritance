@@ -14,7 +14,6 @@ public class App {
         loadDataToEmployers();
         EmployerHelper.drawTable(employers);
 
-
     }
 
     private static void loadDataToEmployers() {
