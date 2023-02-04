@@ -31,7 +31,21 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\src\main\java\org\chudnovskiy\TaxableEmployer.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\src\main\java\org\chudnovskiy\util\EmployerHelper.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\src\main\java\org\chudnovskiy\util\PaymentType.java">
           <value>
             <Attribute>
               <option name="separator" value=";" />

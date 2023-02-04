@@ -14,6 +14,9 @@ public class App {
         loadDataToEmployers();
         EmployerHelper.drawTable(employers);
 
+        TaxableEmployer taxableEmployer = new TaxableEmployer("Иванов", PaymentType.BID, new BigDecimal(3000));
+        System.out.println(taxableEmployer);
+
     }
 
     private static void loadDataToEmployers() {
