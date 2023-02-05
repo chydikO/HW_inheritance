@@ -10,14 +10,14 @@ import java.util.List;
 public class EmployerHelper {
     static public BigDecimal getSum(List<Employer> employers) {
         BigDecimal sum = new BigDecimal(0);
-        for(Employer employer : employers) {
+        for (Employer employer : employers) {
             sum = sum.add(employer.getSum());
         }
         return sum;
     }
 
     static public void drawTable(List<Employer> employers) {
-        System.out.printf("%-15s%-10s%-15s%-15s%n", "ФИО", "Налог", "Сумма","К оплате");
+        System.out.printf("%-15s%-10s%-15s%-15s%n", "ФИО", "Налог", "Сумма", "К оплате");
         for (Employer employer : employers) {
             System.out.print(employer);
         }
@@ -26,9 +26,9 @@ public class EmployerHelper {
 
     private static BigDecimal getToPay(List<Employer> employers) {
         BigDecimal sum = new BigDecimal(0);
-        for(Employer employer : employers) {
+        for (Employer employer : employers) {
             if (employer instanceof TaxableEmployer) {
-                sum = sum.add(((TaxableEmployer)employer).getToPay());
+                sum = sum.add(((TaxableEmployer) employer).getToPay());
             }
         }
         return sum;

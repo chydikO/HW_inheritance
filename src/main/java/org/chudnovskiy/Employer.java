@@ -1,6 +1,9 @@
 package org.chudnovskiy;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.chudnovskiy.util.EmployerHelper;
 import org.chudnovskiy.util.PaymentType;
 
@@ -20,6 +23,6 @@ public class Employer {
     @Override
     public String toString() {
         return String.format("%-15s%-10s%-15s",
-        name, paymentType.percent, EmployerHelper.currencyFormat(sum));
+                name, paymentType.percent, EmployerHelper.currencyFormat(sum));
     }
 }

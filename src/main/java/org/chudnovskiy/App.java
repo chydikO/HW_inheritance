@@ -13,16 +13,12 @@ public class App {
     public static void main(String[] args) {
         loadDataToEmployers();
         EmployerHelper.drawTable(employers);
-
-        TaxableEmployer taxableEmployer = new TaxableEmployer("Иванов", PaymentType.BID, new BigDecimal(3000));
-        //System.out.println(taxableEmployer);
-
     }
 
     private static void loadDataToEmployers() {
-        employers.add(new TaxableEmployer("Иванов", PaymentType.BID, new BigDecimal(3000)));
-        employers.add(new TaxableEmployer("Сидоров", PaymentType.HOURLY, new BigDecimal(800)));
-        employers.add(new TaxableEmployer("Иванов", PaymentType.PIECE_WORK, new BigDecimal(5500)));
+        employers.add(new TaxableEmployer("Иванов", PaymentType.BID, new BigDecimal(3000), true));
+        employers.add(new TaxableEmployer("Сидоров", PaymentType.HOURLY, new BigDecimal(800), false));
+        employers.add(new TaxableEmployer("Иванов", PaymentType.PIECE_WORK, new BigDecimal(5500), true));
     }
 
 
