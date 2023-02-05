@@ -23,7 +23,7 @@ public class TaxableEmployer extends Employer {
 
     @Override
     public String toString() {
-        String string = super.toString().replace("\n", "").replace("\r", "");
-        return string + EmployerHelper.currencyFormat(toPay);
+//        String string = super.toString().replace("\n", "").replace("\r", "");
+        return super.toString() + EmployerHelper.currencyFormat(toPay) + "\n";
     }
 }

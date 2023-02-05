@@ -19,7 +19,7 @@ public class Employer {
 
     @Override
     public String toString() {
-        return String.format("%-15s%-15s%-15s%n",
-        name, paymentType, EmployerHelper.currencyFormat(sum));
+        return String.format("%-15s%-10s%-15s",
+        name, paymentType.percent, EmployerHelper.currencyFormat(sum));
     }
 }

@@ -20,10 +20,9 @@ public class App {
     }
 
     private static void loadDataToEmployers() {
-        employers.add(new Employer("Иванов", PaymentType.BID, new BigDecimal(3000)));
-        employers.add(new Employer("Сидоров", PaymentType.PIECE_WORK, new BigDecimal(800)));
-        employers.add(new Employer("Иванов", PaymentType.HOURLY, new BigDecimal(5500)));
-        employers.add(new TaxableEmployer("Иванов-Сидоров", PaymentType.BID, new BigDecimal(3000)));
+        employers.add(new TaxableEmployer("Иванов", PaymentType.BID, new BigDecimal(3000)));
+        employers.add(new TaxableEmployer("Сидоров", PaymentType.HOURLY, new BigDecimal(800)));
+        employers.add(new TaxableEmployer("Иванов", PaymentType.PIECE_WORK, new BigDecimal(5500)));
     }
 
 
