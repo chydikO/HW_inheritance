@@ -17,6 +17,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\src\main\java\org\chudnovskiy\EmployeeWithoutChildren.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\src\main\java\org\chudnovskiy\Employer.java">
           <value>
             <Attribute>
