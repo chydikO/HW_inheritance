@@ -24,7 +24,7 @@ public class EmployerHelper {
         System.out.printf("\n%-25s%-15s%-15s%n", "Итого", currencyFormat(getSum(employers)), currencyFormat(getToPay(employers)));
     }
 
-    private static BigDecimal getToPay(List<Employer> employers) {
+    public static BigDecimal getToPay(List<Employer> employers) {
         BigDecimal sum = new BigDecimal(0);
         for (Employer employer : employers) {
             if (employer instanceof TaxableEmployer) {

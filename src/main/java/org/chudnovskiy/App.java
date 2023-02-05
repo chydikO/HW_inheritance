@@ -18,7 +18,7 @@ public class App {
     private static void loadDataToEmployers() {
         employers.add(new TaxableEmployer("Иванов", PaymentType.BID, new BigDecimal(3000), true));
         employers.add(new TaxableEmployer("Сидоров", PaymentType.HOURLY, new BigDecimal(800), false));
-        employers.add(new TaxableEmployer("Иванов", PaymentType.PIECE_WORK, new BigDecimal(5500), true));
+        employers.add(new TaxableEmployer("Иванова", PaymentType.PIECE_WORK, new BigDecimal(5500), true));
     }
 
 
