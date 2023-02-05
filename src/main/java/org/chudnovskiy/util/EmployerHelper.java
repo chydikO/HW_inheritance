@@ -3,6 +3,7 @@ package org.chudnovskiy.util;
 import org.chudnovskiy.Employer;
 
 import java.math.BigDecimal;
+import java.text.NumberFormat;
 import java.util.List;
 
 public class EmployerHelper {
@@ -17,11 +18,12 @@ public class EmployerHelper {
     static public void drawTable(List<Employer> employers) {
         System.out.printf("%-15s%-15s%-15s%n", "ФИО", "Вид оплаты", "Сумма");
         for (Employer employer : employers) {
-            System.out.printf("%-15s%-15s%-15s%n",
-                    employer.getName(),
-                    employer.getPaymentType(),
-                    employer.getSum().toString() + " грн.");
+            System.out.print(employer);
         }
-        System.out.printf("%-30s%-15s%n", "Итого", getSum(employers).toString() + " грн.");
+        System.out.printf("\n%-30s%-15s%n", "Итого", currencyFormat(getSum(employers)));
+    }
+
+    public static String currencyFormat(BigDecimal n) {
+        return NumberFormat.getCurrencyInstance().format(n);
     }
 }

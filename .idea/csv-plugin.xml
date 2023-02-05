@@ -52,6 +52,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\src\test\java\org\chudnovskiy\TaxableEmployerTest.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\src\test\java\org\chudnovskiy\util\EmployerHelperTest.java">
           <value>
             <Attribute>

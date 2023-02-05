@@ -15,7 +15,7 @@ public class App {
         EmployerHelper.drawTable(employers);
 
         TaxableEmployer taxableEmployer = new TaxableEmployer("Иванов", PaymentType.BID, new BigDecimal(3000));
-        System.out.println(taxableEmployer);
+        //System.out.println(taxableEmployer);
 
     }
 
@@ -23,6 +23,7 @@ public class App {
         employers.add(new Employer("Иванов", PaymentType.BID, new BigDecimal(3000)));
         employers.add(new Employer("Сидоров", PaymentType.PIECE_WORK, new BigDecimal(800)));
         employers.add(new Employer("Иванов", PaymentType.HOURLY, new BigDecimal(5500)));
+        employers.add(new TaxableEmployer("Иванов-Сидоров", PaymentType.BID, new BigDecimal(3000)));
     }
 
 
